@@ -1,0 +1,45 @@
+header {
+          height:80px;
+          background-color: #E6FACA;
+          color:white;
+          text-align: center; 
+          } 
+       
+        aside {
+          width:150px;:
+          background-color: #A8ACAC;
+          border-right-color: white;
+          border-top-color: white;
+          border-top-style: solid;
+          border-right-style: solid;
+          text-align: center;
+          line-height: 50px;
+          height :300px;
+          float :left;
+          }
+        aside {
+          width:150px;
+          background-color: #A8ACAC;
+          border-right-color: white;
+          border-top-color: white;
+          border-top-style: solid;
+          border-right-style: solid;
+          text-align: center;
+          line-height: 50px;
+          height :300px;
+          float :left;
+          }
+        main {
+          background-color: #C2AECB;
+          border-top-style:solid;
+          border-top-color:white;
+          height:300px;
+          padding-left: 175px
+          }
+        footer {
+          height:300px;
+          background-color: #B1CABA;
+          text-align: center ;
+          }
+
+          
