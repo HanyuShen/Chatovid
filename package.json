@@ -1,0 +1,29 @@
+{
+  "name": "chatovid",
+  "version": "0.0.1",
+  "description": "A social app",
+  "main": "app.js",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.4.0",
+    "boxicons": "^2.0.7",
+    "express": "^4.17.1",
+    "glightbox": "^3.0.7",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.6.0",
+    "popper": "^1.0.1",
+    "remixicon": "^2.5.0",
+    "swiper": "^6.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://gitlab@gitlab.cs.man.ac.uk:22222/w55186hs/chatovid_template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
