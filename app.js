@@ -12,7 +12,7 @@ const app = express();
 // -- let the server use code from modules
 app.use('/assets', express.static(path.join(__dirname, 'html/assets')))
 
-// -- INDEX
+// -- INDEX (MAIN PAGE)
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, 'html/index.html'));
 });
@@ -25,6 +25,16 @@ app.get("/login", (req, res) => {
 // -- SIGNUP
 app.get("/signup", (req, res) => {
     res.sendFile(path.join(__dirname, 'html/sign-up.html'));
+});
+
+// -- FEEDBACK
+app.get("/feedback", (req, res) => {
+    res.sendFile(path.join(__dirname, 'html/feedback.html'));
+});
+
+// -- CHAT
+app.get("/chat", (req, res) => {
+    res.sendFile(path.join(__dirname, 'html/chatroom.html'));
 });
 
 // --- SERVER
