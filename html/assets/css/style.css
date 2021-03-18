@@ -27,6 +27,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -46,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #4b92db;
+  border: 6px solid #ff7f5d;
   border-top-color: white;
   border-radius: 50%;
   width: 60px;
@@ -72,7 +74,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(360deg);
   }
 }
-
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -319,69 +320,6 @@ h6 {
   color: #fff;
 }
 
-.navbar .dropdown ul {
-  display: block;
-  position: absolute;
-  left: 12px;
-  top: calc(100% + 30px);
-  margin: 0;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
-}
-
-.navbar .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-  text-transform: none;
-  font-weight: 500;
-  color: #150517;
-}
-
-.navbar .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #4b92db;
-}
-
-.navbar .dropdown:hover > ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
-
-.navbar .dropdown .dropdown:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-}
-
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-  .navbar .dropdown .dropdown:hover > ul {
-    left: -100%;
-  }
-}
-
 /**
 * Mobile Navigation 
 */
@@ -578,75 +516,24 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about .content h3 {
-  font-weight: 600;
-  font-size: 26px;
-}
-
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about .content ul li {
-  padding-left: 28px;
-  position: relative;
-}
-
-.about .content ul li + li {
-  margin-top: 10px;
-}
-
-.about .content ul i {
-  position: absolute;
-  left: 0;
-  top: 2px;
-  font-size: 20px;
-  color: #4b92db;
-  line-height: 1;
-}
-
 .about .content p:last-child {
   margin-bottom: 0;
 }
 
-.about .content .btn-learn-more {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 5px;
-  transition: 0.3s;
-  line-height: 1;
-  color: #4b92db;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-  margin-top: 6px;
-  border: 2px solid #4b92db;
-}
-
-.about .content .btn-learn-more:hover {
-  background: #4b92db;
-  color: #fff;
-  text-decoration: none;
-}
-
 /*--------------------------------------------------------------
-# Counts
+# Statistics
 --------------------------------------------------------------*/
-.counts {
+.stats {
   padding: 0;
 }
 
-.counts .counters span {
+.stats .counters span {
   font-size: 48px;
   display: block;
   color: #4b92db;
 }
 
-.counts .counters p {
+.stats .counters p {
   padding: 0;
   margin: 0 0 20px 0;
   font-family: "Raleway", sans-serif;
@@ -731,45 +618,6 @@ section {
   overflow: hidden;
 }
 
-.team .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 30px;
-  right: 0;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  color: #150517;
-  margin: 0 3px;
-  border-radius: 4px;
-  width: 36px;
-  height: 36px;
-  background: rgba(255, 127, 93, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: ease-in-out 0.3s;
-  color: #fff;
-}
-
-.team .member .social a i {
-  line-height: 0;
-}
-
-.team .member .social a:hover {
-  background: #4b92db;
-}
-
-.team .member .social i {
-  font-size: 18px;
-}
-
 .team .member .member-info {
   padding: 25px 15px;
 }
@@ -798,40 +646,6 @@ section {
 .team .member:hover .social {
   opacity: 1;
   bottom: 15px;
-}
-
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background: #fafafa;
-  min-height: 40px;
-}
-
-.breadcrumbs h2 {
-  font-size: 28px;
-  font-weight: 500;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0 0 10px 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #3b0e41;
-  content: "/";
 }
 
 /*--------------------------------------------------------------
@@ -877,72 +691,6 @@ section {
   font-style: italic;
   margin: 30px 0 0 0;
   padding: 0;
-}
-
-#footer .footer-top .footer-newsletter {
-  text-align: center;
-  font-size: 15px;
-  margin-top: 30px;
-}
-
-#footer .footer-top .footer-newsletter form {
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 4px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  text-align: left;
-}
-
-#footer .footer-top .footer-newsletter form input[type="email"] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
-
-#footer .footer-top .footer-newsletter form input[type="submit"] {
-  position: absolute;
-  top: 0;
-  right: -1px;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: #4b92db;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 0 4px 4px 0;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
-  background: #ff9377;
-}
-
-#footer .footer-top .social-links {
-  margin-top: 30px;
-}
-
-#footer .footer-top .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 4px;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#footer .footer-top .social-links a:hover {
-  background: #4b92db;
-  color: #fff;
-  text-decoration: none;
 }
 
 #footer .footer-bottom {
