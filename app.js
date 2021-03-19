@@ -13,9 +13,8 @@ const port = 3000;
 // -- mysql
 var connection = mysql.createConnection({
 	host     : 'localhost',
-        // @TODO: change the username and password
-	user     : 'root',
-	password : 'test',
+	user     : 'chatovid',
+	password : 'super_secret_password',
 	database : 'chatovid'
 });
 
